@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop — Sim9le</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">Sim9le</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="drink.html">The Drink</a>
+        <a href="story.html">Our Story</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta-btn" href="shop.html">Buy Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1526312426976-2aa1c5a4b62f?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b3d3fbd2f5a4c8d2a2b8b4d7f5c2e2a" alt="shop hero image">
+      <div class="hero-inner">
+        <h1>Shop</h1>
+        <p>Choose your pack. Fast shipping available nationwide.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start">
+        <div>
+          <div class="product" style="margin-bottom:12px;">
+            <div style="display:flex;gap:14px;align-items:center;">
+              <img src="https://images.unsplash.com/photo-1601924638867-3ec84a3f3f6a?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=7e9d8e2f8f7a6f5c4b3d2a1f0e9c8b7a" style="width:88px;border-radius:8px;" alt="6-pack">
+              <div>
+                <strong>6-Pack</strong><div style="color:#666">$15.99</div>
+              </div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('6-Pack', 15.99)">Add</button>
+            </div>
+          </div>
+
+          <div class="product" style="margin-bottom:12px;">
+            <div style="display:flex;gap:14px;align-items:center;">
+              <img src="https://images.unsplash.com/photo-1572441710260-4b6b2d5b2b91?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8f4d6c5b3a2e1d0c9b8a6f5e4d3c2b1a" style="width:88px;border-radius:8px;" alt="12-pack">
+              <div>
+                <strong>12-Pack</strong><div style="color:#666">$28.99</div>
+              </div>
+            </div>
+            <div>
+              <button class="btn" onclick="addToCart('12-Pack', 28.99)">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3>Your Cart</h3>
+            <div id="cartItems" style="margin-top:12px;"></div>
+            <div style="margin-top:12px;">
+              <button class="btn" onclick="checkout()">Checkout</button>
+            </div>
+            <p style="margin-top:10px;color:#777;font-size:0.9rem;">This demo uses a front-end cart only. Integrate Stripe or PayPal for real checkout.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Sim9le Energy Drink</p>
+    </div>
+  </footer>
+</body>
+</html>

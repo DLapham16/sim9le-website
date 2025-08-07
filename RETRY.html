@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Sim9le</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="brand">Sim9le</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="drink.html">The Drink</a>
+        <a href="story.html">Our Story</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta-btn" href="shop.html">Buy Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f5b6e6b3f4a2b1c7d8e9f0a6b5c4d3e" alt="Contact header">
+      <div class="hero-inner">
+        <h1>Contact Us</h1>
+        <p>Questions, wholesale inquiries, or wholesale partnerships — we’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <div>
+          <form onsubmit="event.preventDefault(); alert('Thanks! Message sent (demo).')">
+            <label for="name">Name</label>
+            <input id="name" type="text" required placeholder="Your name">
+            <label for="email" style="margin-top:8px">Email</label>
+            <input id="email" type="email" required placeholder="you@domain.com">
+            <label for="subject" style="margin-top:8px">Subject</label>
+            <input id="subject" type="text" placeholder="Subject">
+            <label for="message" style="margin-top:8px">Message</label>
+            <textarea id="message" rows="6" placeholder="How can we help?" required></textarea>
+            <button class="btn" type="submit" style="margin-top:12px;">Send Message</button>
+          </form>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3>Customer Care</h3>
+            <p style="color:#555">Email: <a href="mailto:support@sim9le.com">support@sim9le.com</a></p>
+            <p style="color:#555">Address: 123 Natural Energy Rd, Willimantic, CT</p>
+            <p style="color:#555">Follow us on Instagram: <a href="#" style="color:#ff7b00">@sim9le</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Sim9le Energy Drink</p>
+    </div>
+  </footer>
+</body>
+</html>
