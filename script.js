@@ -2,7 +2,12 @@
 const cart = [];
 
 function addToCart(name, price) {
-  cart.push({ name, price });
+  const numericPrice = Number(price);
+  if (Number.isNaN(numericPrice)) {
+    console.warn('Invalid price passed to addToCart:', price);
+    return;
+  }
+  cart.push({ name, price: numericPrice });
   renderCart();
 }
 
